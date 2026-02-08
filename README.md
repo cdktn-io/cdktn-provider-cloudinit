@@ -19,17 +19,17 @@ The PyPI package is available at [https://pypi.org/project/cdktn-provider-cloudi
 
 ### Nuget
 
-The Nuget package is available at [https://www.nuget.org/packages/Io.Cdktn.Cdktn.Providers.Cloudinit](https://www.nuget.org/packages/Io.Cdktn.Cdktn.Providers.Cloudinit).
+The Nuget package is available at [https://www.nuget.org/packages/Io.Cdktn.Providers.Cloudinit](https://www.nuget.org/packages/Io.Cdktn.Providers.Cloudinit).
 
-`dotnet add package Io.Cdktn.Cdktn.Providers.Cloudinit`
+`dotnet add package Io.Cdktn.Providers.Cloudinit`
 
 ### Maven
 
-The Maven package is available at [https://mvnrepository.com/artifact/com.Io.Cdktn/cdktn-provider-cloudinit](https://mvnrepository.com/artifact/com.Io.Cdktn/cdktn-provider-cloudinit).
+The Maven package is available at [https://mvnrepository.com/artifact/io.cdktn/cdktn-provider-cloudinit](https://mvnrepository.com/artifact/io.cdktn/cdktn-provider-cloudinit).
 
 ```
 <dependency>
-    <groupId>com.Io.Cdktn</groupId>
+    <groupId>io.cdktn</groupId>
     <artifactId>cdktn-provider-cloudinit</artifactId>
     <version>[REPLACE WITH DESIRED VERSION]</version>
 </dependency>

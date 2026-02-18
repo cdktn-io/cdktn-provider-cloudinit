@@ -7,17 +7,17 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataCloudinitConfigConfig extends cdktf.TerraformMetaArguments {
+export interface DataCloudinitConfigConfig extends cdktn.TerraformMetaArguments {
   /**
   * Specify whether or not to base64 encode the `rendered` output. Defaults to `true`, and cannot be disabled if gzip is `true`.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/cloudinit/2.3.7/docs/data-sources/config#base64_encode DataCloudinitConfig#base64_encode}
   */
-  readonly base64Encode?: boolean | cdktf.IResolvable;
+  readonly base64Encode?: boolean | cdktn.IResolvable;
   /**
   * Specify the Writer's default boundary separator. Defaults to `MIMEBOUNDARY`.
   *
@@ -29,13 +29,13 @@ export interface DataCloudinitConfigConfig extends cdktf.TerraformMetaArguments 
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/cloudinit/2.3.7/docs/data-sources/config#gzip DataCloudinitConfig#gzip}
   */
-  readonly gzip?: boolean | cdktf.IResolvable;
+  readonly gzip?: boolean | cdktn.IResolvable;
   /**
   * part block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/cloudinit/2.3.7/docs/data-sources/config#part DataCloudinitConfig#part}
   */
-  readonly part?: DataCloudinitConfigPart[] | cdktf.IResolvable;
+  readonly part?: DataCloudinitConfigPart[] | cdktn.IResolvable;
 }
 export interface DataCloudinitConfigPart {
   /**
@@ -64,46 +64,46 @@ export interface DataCloudinitConfigPart {
   readonly mergeType?: string;
 }
 
-export function dataCloudinitConfigPartToTerraform(struct?: DataCloudinitConfigPart | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataCloudinitConfigPartToTerraform(struct?: DataCloudinitConfigPart | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    content: cdktf.stringToTerraform(struct!.content),
-    content_type: cdktf.stringToTerraform(struct!.contentType),
-    filename: cdktf.stringToTerraform(struct!.filename),
-    merge_type: cdktf.stringToTerraform(struct!.mergeType),
+    content: cdktn.stringToTerraform(struct!.content),
+    content_type: cdktn.stringToTerraform(struct!.contentType),
+    filename: cdktn.stringToTerraform(struct!.filename),
+    merge_type: cdktn.stringToTerraform(struct!.mergeType),
   }
 }
 
 
-export function dataCloudinitConfigPartToHclTerraform(struct?: DataCloudinitConfigPart | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataCloudinitConfigPartToHclTerraform(struct?: DataCloudinitConfigPart | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     content: {
-      value: cdktf.stringToHclTerraform(struct!.content),
+      value: cdktn.stringToHclTerraform(struct!.content),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     content_type: {
-      value: cdktf.stringToHclTerraform(struct!.contentType),
+      value: cdktn.stringToHclTerraform(struct!.contentType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     filename: {
-      value: cdktf.stringToHclTerraform(struct!.filename),
+      value: cdktn.stringToHclTerraform(struct!.filename),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     merge_type: {
-      value: cdktf.stringToHclTerraform(struct!.mergeType),
+      value: cdktn.stringToHclTerraform(struct!.mergeType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -114,9 +114,9 @@ export function dataCloudinitConfigPartToHclTerraform(struct?: DataCloudinitConf
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataCloudinitConfigPartOutputReference extends cdktf.ComplexObject {
+export class DataCloudinitConfigPartOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -124,11 +124,11 @@ export class DataCloudinitConfigPartOutputReference extends cdktf.ComplexObject 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataCloudinitConfigPart | cdktf.IResolvable | undefined {
+  public get internalValue(): DataCloudinitConfigPart | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -153,7 +153,7 @@ export class DataCloudinitConfigPartOutputReference extends cdktf.ComplexObject 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataCloudinitConfigPart | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataCloudinitConfigPart | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -162,7 +162,7 @@ export class DataCloudinitConfigPartOutputReference extends cdktf.ComplexObject 
       this._filename = undefined;
       this._mergeType = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -238,15 +238,15 @@ export class DataCloudinitConfigPartOutputReference extends cdktf.ComplexObject 
   }
 }
 
-export class DataCloudinitConfigPartList extends cdktf.ComplexList {
-  public internalValue? : DataCloudinitConfigPart[] | cdktf.IResolvable
+export class DataCloudinitConfigPartList extends cdktn.ComplexList {
+  public internalValue? : DataCloudinitConfigPart[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -261,7 +261,7 @@ export class DataCloudinitConfigPartList extends cdktf.ComplexList {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/cloudinit/2.3.7/docs/data-sources/config cloudinit_config}
 */
-export class DataCloudinitConfig extends cdktf.TerraformDataSource {
+export class DataCloudinitConfig extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -272,14 +272,14 @@ export class DataCloudinitConfig extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataCloudinitConfig resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataCloudinitConfig resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudinitConfig to import
   * @param importFromId The id of the existing DataCloudinitConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/cloudinit/2.3.7/docs/data-sources/config#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudinitConfig to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "cloudinit_config", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "cloudinit_config", importId: importFromId, provider });
       }
 
   // ===========
@@ -320,11 +320,11 @@ export class DataCloudinitConfig extends cdktf.TerraformDataSource {
   // ==========
 
   // base64_encode - computed: true, optional: true, required: false
-  private _base64Encode?: boolean | cdktf.IResolvable; 
+  private _base64Encode?: boolean | cdktn.IResolvable; 
   public get base64Encode() {
     return this.getBooleanAttribute('base64_encode');
   }
-  public set base64Encode(value: boolean | cdktf.IResolvable) {
+  public set base64Encode(value: boolean | cdktn.IResolvable) {
     this._base64Encode = value;
   }
   public resetBase64Encode() {
@@ -352,11 +352,11 @@ export class DataCloudinitConfig extends cdktf.TerraformDataSource {
   }
 
   // gzip - computed: true, optional: true, required: false
-  private _gzip?: boolean | cdktf.IResolvable; 
+  private _gzip?: boolean | cdktn.IResolvable; 
   public get gzip() {
     return this.getBooleanAttribute('gzip');
   }
-  public set gzip(value: boolean | cdktf.IResolvable) {
+  public set gzip(value: boolean | cdktn.IResolvable) {
     this._gzip = value;
   }
   public resetGzip() {
@@ -382,7 +382,7 @@ export class DataCloudinitConfig extends cdktf.TerraformDataSource {
   public get part() {
     return this._part;
   }
-  public putPart(value: DataCloudinitConfigPart[] | cdktf.IResolvable) {
+  public putPart(value: DataCloudinitConfigPart[] | cdktn.IResolvable) {
     this._part.internalValue = value;
   }
   public resetPart() {
@@ -399,35 +399,35 @@ export class DataCloudinitConfig extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      base64_encode: cdktf.booleanToTerraform(this._base64Encode),
-      boundary: cdktf.stringToTerraform(this._boundary),
-      gzip: cdktf.booleanToTerraform(this._gzip),
-      part: cdktf.listMapper(dataCloudinitConfigPartToTerraform, true)(this._part.internalValue),
+      base64_encode: cdktn.booleanToTerraform(this._base64Encode),
+      boundary: cdktn.stringToTerraform(this._boundary),
+      gzip: cdktn.booleanToTerraform(this._gzip),
+      part: cdktn.listMapper(dataCloudinitConfigPartToTerraform, true)(this._part.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       base64_encode: {
-        value: cdktf.booleanToHclTerraform(this._base64Encode),
+        value: cdktn.booleanToHclTerraform(this._base64Encode),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       boundary: {
-        value: cdktf.stringToHclTerraform(this._boundary),
+        value: cdktn.stringToHclTerraform(this._boundary),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       gzip: {
-        value: cdktf.booleanToHclTerraform(this._gzip),
+        value: cdktn.booleanToHclTerraform(this._gzip),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       part: {
-        value: cdktf.listMapperHcl(dataCloudinitConfigPartToHclTerraform, true)(this._part.internalValue),
+        value: cdktn.listMapperHcl(dataCloudinitConfigPartToHclTerraform, true)(this._part.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "DataCloudinitConfigPartList",

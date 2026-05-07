@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/cloudinit/
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudinit.provider.CloudinitProvider.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudinit-go/cloudinit/v12/provider"
+import "github.com/cdktn-io/cdktn-provider-cloudinit-go/cloudinit/v13/provider"
 
 provider.NewCloudinitProvider(scope Construct, id *string, config CloudinitProviderConfig) CloudinitProvider
 ```
@@ -173,7 +173,7 @@ func ResetAlias()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudinit.provider.CloudinitProvider.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudinit-go/cloudinit/v12/provider"
+import "github.com/cdktn-io/cdktn-provider-cloudinit-go/cloudinit/v13/provider"
 
 provider.CloudinitProvider_IsConstruct(x interface{}) *bool
 ```
@@ -205,7 +205,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudinit.provider.CloudinitProvider.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudinit-go/cloudinit/v12/provider"
+import "github.com/cdktn-io/cdktn-provider-cloudinit-go/cloudinit/v13/provider"
 
 provider.CloudinitProvider_IsTerraformElement(x interface{}) *bool
 ```
@@ -219,7 +219,7 @@ provider.CloudinitProvider_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformProvider` <a name="IsTerraformProvider" id="@cdktn/provider-cloudinit.provider.CloudinitProvider.isTerraformProvider"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudinit-go/cloudinit/v12/provider"
+import "github.com/cdktn-io/cdktn-provider-cloudinit-go/cloudinit/v13/provider"
 
 provider.CloudinitProvider_IsTerraformProvider(x interface{}) *bool
 ```
@@ -233,7 +233,7 @@ provider.CloudinitProvider_IsTerraformProvider(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudinit.provider.CloudinitProvider.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudinit-go/cloudinit/v12/provider"
+import "github.com/cdktn-io/cdktn-provider-cloudinit-go/cloudinit/v13/provider"
 
 provider.CloudinitProvider_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -418,7 +418,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudinit.provider.CloudinitProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudinit-go/cloudinit/v12/provider"
+import "github.com/cdktn-io/cdktn-provider-cloudinit-go/cloudinit/v13/provider"
 
 &provider.CloudinitProviderConfig {
 	Alias: *string,

@@ -4,7 +4,7 @@
 
 ### CloudinitProvider <a name="CloudinitProvider" id="@cdktn/provider-cloudinit.provider.CloudinitProvider"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/cloudinit/2.3.7/docs cloudinit}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/cloudinit/2.4.0/docs cloudinit}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudinit.provider.CloudinitProvider.Initializer"></a>
 
@@ -48,7 +48,7 @@ Must be unique amongst siblings in the same scope
 
 Alias name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/cloudinit/2.3.7/docs#alias CloudinitProvider#alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/cloudinit/2.4.0/docs#alias CloudinitProvider#alias}
 
 ---
 
@@ -268,7 +268,7 @@ The construct id used in the generated config for the CloudinitProvider to impor
 
 The id of the existing CloudinitProvider that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/cloudinit/2.3.7/docs#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/cloudinit/2.4.0/docs#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -449,7 +449,7 @@ public java.lang.String getAlias();
 
 Alias name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/cloudinit/2.3.7/docs#alias CloudinitProvider#alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/cloudinit/2.4.0/docs#alias CloudinitProvider#alias}
 
 ---
 

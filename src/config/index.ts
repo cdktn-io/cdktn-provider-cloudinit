@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/cloudinit/2.3.7/docs/resources/config
+// https://registry.terraform.io/providers/hashicorp/cloudinit/2.4.0/docs/resources/config
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,25 +15,25 @@ export interface ConfigConfig extends cdktn.TerraformMetaArguments {
   /**
   * Specify whether or not to base64 encode the `rendered` output. Defaults to `true`, and cannot be disabled if gzip is `true`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/cloudinit/2.3.7/docs/resources/config#base64_encode Config#base64_encode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/cloudinit/2.4.0/docs/resources/config#base64_encode Config#base64_encode}
   */
   readonly base64Encode?: boolean | cdktn.IResolvable;
   /**
   * Specify the Writer's default boundary separator. Defaults to `MIMEBOUNDARY`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/cloudinit/2.3.7/docs/resources/config#boundary Config#boundary}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/cloudinit/2.4.0/docs/resources/config#boundary Config#boundary}
   */
   readonly boundary?: string;
   /**
   * Specify whether or not to gzip the `rendered` output. Defaults to `true`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/cloudinit/2.3.7/docs/resources/config#gzip Config#gzip}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/cloudinit/2.4.0/docs/resources/config#gzip Config#gzip}
   */
   readonly gzip?: boolean | cdktn.IResolvable;
   /**
   * part block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/cloudinit/2.3.7/docs/resources/config#part Config#part}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/cloudinit/2.4.0/docs/resources/config#part Config#part}
   */
   readonly part?: ConfigPart[] | cdktn.IResolvable;
 }
@@ -41,25 +41,25 @@ export interface ConfigPart {
   /**
   * Body content for the part.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/cloudinit/2.3.7/docs/resources/config#content Config#content}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/cloudinit/2.4.0/docs/resources/config#content Config#content}
   */
   readonly content: string;
   /**
   * A MIME-style content type to report in the header for the part. Defaults to `text/plain`
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/cloudinit/2.3.7/docs/resources/config#content_type Config#content_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/cloudinit/2.4.0/docs/resources/config#content_type Config#content_type}
   */
   readonly contentType?: string;
   /**
   * A filename to report in the header for the part.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/cloudinit/2.3.7/docs/resources/config#filename Config#filename}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/cloudinit/2.4.0/docs/resources/config#filename Config#filename}
   */
   readonly filename?: string;
   /**
   * A value for the `X-Merge-Type` header of the part, to control [cloud-init merging behavior](https://cloudinit.readthedocs.io/en/latest/reference/merging.html).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/cloudinit/2.3.7/docs/resources/config#merge_type Config#merge_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/cloudinit/2.4.0/docs/resources/config#merge_type Config#merge_type}
   */
   readonly mergeType?: string;
 }
@@ -259,7 +259,7 @@ export class ConfigPartList extends cdktn.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/cloudinit/2.3.7/docs/resources/config cloudinit_config}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/cloudinit/2.4.0/docs/resources/config cloudinit_config}
 */
 export class Config extends cdktn.TerraformResource {
 
@@ -275,7 +275,7 @@ export class Config extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a Config resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Config to import
-  * @param importFromId The id of the existing Config that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/cloudinit/2.3.7/docs/resources/config#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Config that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/cloudinit/2.4.0/docs/resources/config#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Config to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -287,7 +287,7 @@ export class Config extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/cloudinit/2.3.7/docs/resources/config cloudinit_config} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/cloudinit/2.4.0/docs/resources/config cloudinit_config} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -298,7 +298,7 @@ export class Config extends cdktn.TerraformResource {
       terraformResourceType: 'cloudinit_config',
       terraformGeneratorMetadata: {
         providerName: 'cloudinit',
-        providerVersion: '2.3.7',
+        providerVersion: '2.4.0',
         providerVersionConstraint: '~> 2.2'
       },
       provider: config.provider,
